@@ -1,0 +1,110 @@
+body.cyberpunk {
+  font-family: "Orbitron", sans-serif;
+  background-color: black;
+  color: #ff66cc;
+}
+
+#stars-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+.center-box,
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 60px 80px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px #ff66cc, 0 0 60px #ff99dd;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px #ff66cc, 0 0 40px #ff99dd;
+  }
+  50% {
+    box-shadow: 0 0 30px #ff66cc, 0 0 60px #ff99dd;
+  }
+  100% {
+    box-shadow: 0 0 20px #ff66cc, 0 0 40px #ff99dd;
+  }
+}
+
+.center-box h1,
+.login-box h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  color: #ff66cc;
+  text-shadow: 0 0 5px #ff66cc, 0 0 15px #ff99dd;
+}
+
+.center-box p,
+.login-box p {
+  font-size: 1.4em;
+  margin-bottom: 30px;
+  color: #ff99dd;
+}
+
+button,
+.main-btn,
+.back-btn {
+  display: inline-block;
+  width: 220px;
+  padding: 15px 0;
+  margin: 12px;
+  background: linear-gradient(45deg, #ff66cc, #ff99dd);
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 12px;
+  text-decoration: none;
+  text-shadow: 0 0 5px #ff66cc;
+  transition: 0.3s;
+}
+
+button:hover,
+.main-btn:hover,
+.back-btn:hover {
+  background: linear-gradient(45deg, #ff99dd, #ff66cc);
+  box-shadow: 0 0 20px #ff66cc, 0 0 40px #ff99dd;
+}
+
+/* ข้อความร่วง Cyberpunk หน้า Home */
+.falling-text span {
+  position: absolute;
+  color: #ff66cc;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff99dd;
+  opacity: 0.6;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* --------------------------- */
+/* Hacker Neon Pink - page1-3 */
+body.hacker {
+  font-family: "Courier New", monospace;
+  background-color: black;
+  color: #ff66cc;
+}
+
+body.hacker .falling-text span {
+  position: absolute;
+  font-size: 14px;
+  color: #ff66cc;
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff99dd;
+  white-space: pre;
+  opacity: 0.6;
+  pointer-events: none;
+}

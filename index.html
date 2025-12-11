@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="cyberpunk">
+    <canvas id="stars-bg"></canvas>
+
+    <div class="login-box center-box">
+      <h1>เข้าสู่ระบบเลยคับพี่คนสวยย</h1>
+      <input type="password" id="password" placeholder="รหัสผ่าน" />
+      <br />
+      <button id="login-btn">ใส่เเย้วกดตรงนี้้</button>
+      <p id="error-msg" style="color: #ff99dd; margin-top: 10px"></p>
+    </div>
+
+    <div id="back-layer" class="falling-text"></div>
+    <div id="front-layer" class="falling-text"></div>
+
+    <script src="ss.js"></script>
+    <script src="XXX.js"></script>
+    <script>
+      const correctPassword = "เนยซี่ฮ่าฮ่าเจ็ด";
+      const loginBtn = document.getElementById("login-btn");
+      const passwordInput = document.getElementById("password");
+      const errorMsg = document.getElementById("error-msg");
+
+      loginBtn.addEventListener("click", () => {
+        const pw = passwordInput.value;
+        if (pw === correctPassword) {
+          window.location.href = "home.html";
+        } else {
+          errorMsg.textContent =
+            "โค้ดไม่ถูกน้าพี่คนสวยยใบ้ให้ที่ผมถามพี่ป่ายยย";
+        }
+      });
+       <audio controls>
+  <source src="YOUNGOHM -  Official Lyric Video.mp3" type="audio/mpeg">
+  <source src="YOUNGOHM -  Official Lyric Video.mp3" type="audio/ogg">
+ </audio>
+      passwordInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") loginBtn.click();
+      });
+    </script>
+  </body>
+</html>
